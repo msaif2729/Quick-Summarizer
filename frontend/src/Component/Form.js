@@ -24,7 +24,7 @@ export default function Form() {
     setSummary(''); // Reset summary before fetching new one
 
     try {
-      const response = await fetch('http://localhost:5000/summarize/content', {
+      const response = await fetch('https://quick-summarizer-backend.onrender.com//summarize/content', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
