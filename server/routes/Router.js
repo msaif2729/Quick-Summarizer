@@ -8,7 +8,7 @@ const {API_KEY,API_URL} = require('../config/config');
 router.post('/content', async (req, res) => {
 
     const { url } = req.body;
-    console.log(url);
+    // console.log(url);
 
     try {
         const content = await extractContentFromHTML(url);
@@ -48,7 +48,7 @@ router.post('/content', async (req, res) => {
         })
             .then((response) => response.json())
             .then((result) => {
-            console.log(result.choices[0].message.content);
+            // console.log(result.choices[0].message.content);
             res.send({result:result.choices[0].message.content});
             })
             .catch((error) => {
