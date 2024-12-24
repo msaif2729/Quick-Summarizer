@@ -31,7 +31,7 @@ router.post('/content', async (req, res) => {
             messages: [
             {
                 role: "system",
-                content: "You are an assistant and you have to summarize the text in provided by the user",
+                content: "You are an assistant and you have to summarize the text provided by the user and also highlight the key points ",
             },
             {
                 role: "user",
